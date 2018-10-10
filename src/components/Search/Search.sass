@@ -1,0 +1,46 @@
+@import '../sharedStyles'
+
+.search
+  background-color: $mazarineBlue
+
+  fieldset
+    max-width: 100%
+    width: 400px
+    margin: 0 auto
+    position: relative
+
+  .search-icon svg
+    fill: $lynxWhite
+    height: 24px
+    position: absolute
+    top: 15px
+    left: 15px
+    user-select: none
+    @media screen and (max-width: $mobileWidth)
+        top: 17px
+
+  .exit-icon svg
+    fill: $lynxWhite
+    height: 18px
+    position: absolute
+    top: 17px
+    right: 15px
+    opacity: 0.9
+    cursor: pointer
+    user-select: none
+    @media screen and (max-width: $mobileWidth)
+        top: 20px
+
+  input
+    +font()
+    display: block
+    padding: 15px 0 15px 45px
+    background: none
+    border: 0
+    outline: 0
+    font-size: 16px
+    max-width: 80%
+    width: 330px
+
+    &::placeholder
+      color: $lynxWhite

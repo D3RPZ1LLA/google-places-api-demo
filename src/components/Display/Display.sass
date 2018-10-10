@@ -1,0 +1,51 @@
+@import '../sharedStyles'
+
+.data-display
+  width: 900px
+  max-width: 100%
+  margin: 40px auto
+  position: relative
+
+  .data-display-container
+    width: 100%
+    display: flex
+    justify-content: space-between
+    position: relative
+
+    .place-data
+      +font()
+      background-color: $mazarineBlue
+      position: relative
+
+      h2
+        text-align: center
+        background-color: $picoVoid
+        height: 30px
+        line-height: 30px
+
+      pre
+        padding: 20px
+        font-size: 14px
+        line-height: 20px
+
+  @media screen and (max-width: $mobileWidth)
+    margin: 0
+    width: 100%
+    overflow-x: hidden
+
+    &.parsed .data-display-container
+      right: 100%
+      transition: right 0.37s
+
+    .data-display-container
+      width: 200%
+      right: 0%
+      transition: right 0.37s
+      flex-direction: row-reverse
+
+      .place-data
+        width: 50%
+        h2
+          display: none
+        pre
+          font-size: 12px

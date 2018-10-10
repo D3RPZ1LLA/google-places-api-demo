@@ -1,0 +1,40 @@
+{
+  "name": "google-places-demo",
+  "version": "1.0.0",
+  "description": "responsive demonstration of google places API",
+  "repository": "https://github.com/D3RPZ1LLA/google-places-demo",
+  "private": true,
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "start": "node ./bin/www",
+    "demo": "npm i && npm run build && npm run start"
+  },
+  "author": "D3RPZ1LLA",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^6.5.1",
+    "axios": "^0.18.0",
+    "babel-core": "~6.26.3",
+    "babel-loader": "~7.1.4",
+    "babel-preset-env": "~1.7.0",
+    "babel-preset-react": "~6.24.1",
+    "cookie-parser": "~1.4.3",
+    "css-loader": "^0.28.11",
+    "debug": "~2.6.9",
+    "express": "^4.16.3",
+    "http-errors": "~1.6.2",
+    "jade": "^1.11.0",
+    "morgan": "~1.9.0",
+    "node-sass": "^4.9.3",
+    "path": "~0.12.7",
+    "prop-types": "^15.6.1",
+    "react": "~16.4.0",
+    "react-dom": "~16.4.0",
+    "react-svg": "^6.0.17",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "webpack": "~4.10.2",
+    "webpack-cli": "^2.1.4"
+  }
+}

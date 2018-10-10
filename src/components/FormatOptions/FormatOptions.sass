@@ -1,0 +1,37 @@
+@import '../sharedStyles'
+
+.formatting
+  display: none
+@media screen and (max-width: $mobileWidth)
+  .formatting
+    display: flex
+    width: 100%
+    position: relative
+
+    li
+      +font()
+      text-align: center
+      background-color: $picoVoid
+      height: 45px
+      line-height: 40px
+      width: 50%
+      cursor: pointer
+
+    .underline-container
+      position: absolute
+      bottom: 0
+      left: 0%
+      width: 50%
+      display: flex
+      justify-content: center
+      transition: left 0.4s
+
+      .underline
+        height: 3px
+        width: 65%
+        background-color: $hintOfPensive
+
+    &.raw .underline-container
+      left: 50%
+      transition: left 0.4s
+

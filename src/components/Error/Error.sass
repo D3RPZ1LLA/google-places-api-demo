@@ -1,0 +1,27 @@
+@import '../sharedStyles'
+
+.error
+  +font()
+  position: fixed
+  top: 15px
+  left: 0
+  right: 0
+  text-align: center
+  height: 50px
+  line-height: 45px
+  z-index: 2
+  display: flex
+  justify-content: center
+
+  .container
+    width: 300px
+    background-color: $harleyDavidsonOrange
+    position: relative
+
+  .exit-icon svg
+    fill: $lynxWhite
+    height: 18px
+    cursor: pointer
+    position: absolute
+    top: 16px
+    right: 20px
