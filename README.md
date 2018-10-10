@@ -7,5 +7,5 @@ npm run demo
 ```
 
 # Live Demo
-viewable at http://google-places-demo.herokuapp.com/
+viewable at http://google-api-demo.herokuapp.com/
 
